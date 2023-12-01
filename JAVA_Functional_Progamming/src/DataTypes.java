@@ -21,6 +21,8 @@ public class DataTypes {
 
         boolean isTrue = false; // 	1 bit	Stores true or false values
 
+
+        // Non-Primitive data types are arrays, strings, classes, interfaces, etc.
     }
 }
 
