@@ -15,6 +15,10 @@ public class Encapsulation {
     void depositMoney(int salary) {
         System.out.print("Enter the salary you want to deposit ");
         salary = Integer.parseInt(input.nextLine());
+        if (salary < 0) {
+            System.out.println("Amount cannot be negative");
+            return;
+        }
         this.deposit_money = salary;
     }
 
