@@ -1,5 +1,7 @@
 package Collections;
 
+import java.util.Map;
+
 public class Array {
     public static void main(String[] args) {
 
@@ -12,6 +14,8 @@ public class Array {
         for (int n : number) {
             System.out.print(n);
         }
+
+
 
     }
 }
