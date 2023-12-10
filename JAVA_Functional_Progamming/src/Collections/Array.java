@@ -15,7 +15,9 @@ public class Array {
             System.out.print(n);
         }
 
-
+        for (int i = 0; i <= number.length; i++) {
+            System.out.print("\n" + i);
+        }
 
     }
 }
