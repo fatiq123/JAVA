@@ -7,10 +7,10 @@ public class Switch {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter your age");
-        int age = input.nextInt();
+        System.out.print("Enter day of week ");
+        int dayOfWeek = input.nextInt();
 
-        int dayOfWeek = 3;
+//        int dayOfWeek = 3;
 
         switch (dayOfWeek) {
             case 1:
