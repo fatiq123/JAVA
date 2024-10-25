@@ -82,6 +82,23 @@ public class FunctionalProgramming {
                 System.out.println("null");
         }
 
+
+
+        // Consumer Interface
+        //Consumer<String> input = s -> System.out.println("Input is : " + s);
+
+        List<String> words = Arrays.asList("java", "c++", "python", "kotlin");
+        words.stream()
+                .map(String::toUpperCase)
+                .filter(word -> word.length() > 4)
+                .collect(Collectors.toList());
+
+                words.stream()
+                .map(s -> s.toUpperCase())
+                .filter(word -> word.length() > 4)
+                .collect(Collectors.toList());
+
+        System.out.println(words);
     }
 
 }
