@@ -99,6 +99,10 @@ public class FunctionalProgramming {
                 .collect(Collectors.toList());
 
         System.out.println(words);
+
+
+        Optional<String> o = Optional.of(null);
+        System.out.println(o.filter(s -> s.isEmpty()));
     }
 
 }
