@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -103,6 +104,19 @@ public class FunctionalProgramming {
 
         Optional<String> o = Optional.of(null);
         System.out.println(o.filter(s -> s.isEmpty()));
+
+
+
+        Predicate<String> b = s -> !s.isEmpty();
+        b.test(name);
+
+        Function<String, Integer> fun = s -> s.length();
+        Integer apply = fun.apply(name);
+        System.out.println(apply);
+
+
+
+
     }
 
 }
